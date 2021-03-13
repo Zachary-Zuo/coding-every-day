@@ -60,7 +60,7 @@ public:
             return;
         if (A[i][j] == 0)
         {
-            points.push({i.j});
+            points.push({i,j});
             return;
         }
         A[i][j] = 2;
