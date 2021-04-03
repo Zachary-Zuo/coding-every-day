@@ -1,6 +1,6 @@
 class MinStack
 {
-    stacks<int> s, min_s;
+    stack<int> s, min_s;
 
 public:
     /** initialize your data structure here. */
@@ -12,7 +12,7 @@ public:
     {
         s.push(val);
         if (min_s.empty() || min_s.top() >= val)
-            min_x.push(val);
+            min_s.push(val);
     }
 
     void pop()
