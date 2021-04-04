@@ -6,7 +6,7 @@ public:
         int temp = 0, n = matrix.size() - 1;
         for (int i = 0; i <= n / 2; i++)
         {
-            for (int j = i; j <= n - i; j++)
+            for (int j = i; j < n - i; j++)
             {
                 temp = matrix[j][n - i];
                 matrix[j][n - i] = matrix[i][j];
